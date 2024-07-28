@@ -3,7 +3,7 @@ module Powerful
 import UnitfulAssets: USD
 import Unitful
 import Unitful: J, W, hr, 𝐋, 𝐌, 𝐓, V, A, C
-using Unitful: @unit, @derived_dimension, @dimension, @refunit, @u_str, uconvert, Quantity
+using Unitful: @unit, @derived_dimension, @dimension, @refunit, uconvert, Quantity, @u_str
 export asqtype, fustrip, UnitfulMissing
 
 # Power Units
@@ -18,6 +18,7 @@ export asqtype, fustrip, UnitfulMissing
 
 # DEfine the unit USDPerKWh
 @unit USDPerKWh "USDPerKWh" "USD/KWh" USD/(1000 * W * hr) false
+
 
 # Define BTU as a unit
 @unit BTU "BTU" BTU 1055.06J true
